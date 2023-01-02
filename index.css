@@ -1,0 +1,48 @@
+h1{color: blue;
+background-color: grey;}
+
+p{color:green;
+background-color: beige;}
+
+.p{font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+ width: 64%;
+ height:auto;
+}
+img{height: auto;
+width: 500px;}
+*{
+    padding: 10;
+    margin: 30;
+    font-size: 40px;
+    border: 10px solid #9B51E0;
+    background-color: #EB5757;
+    box-sizing: border-box;
+    margin: 20px;
+}
+div{
+    display: block;
+    background-color: aqua;
+   font-size: 30px;
+   height: 200px;
+   width: 200px;
+    outline: 2px black solid;
+    
+  
+   
+
+}
+.container{
+    border: 5px solid effects;
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+   
+
+}
