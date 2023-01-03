@@ -20,7 +20,7 @@ width: 500px;}
     border: 10px solid #9B51E0;
     background-color: #EB5757;
     box-sizing: border-box;
-    margin: 20px;
+    margin: 30px;
 }
 div{
     display: block;
@@ -40,9 +40,10 @@ div{
     background: #fff;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:center;
-    align-items: center;
+    justify-content:left;
+    align-items: left;
 
    
 
 }
+
