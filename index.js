@@ -116,7 +116,24 @@ alert
      let z17 = x17 + y17;
      console.log(z17)
 
+     let x18 = "NAN";
+     let y18 = 10;
+     let z18 = x18 + y18;
+     console.log(z18)
 
+     let c= "NAN";
+     let C1= "C"**0;
+     console.log(C1)
+
+     let x19 = 123;
+     let y19 = new Number(123)
+     console.log(x19)
+     console.log(y19)
+
+     let max= 57;
+     let actual= 44;
+     let percentage=actual/max;
+     console.log(percentage)
 
 
      const sales=100;
@@ -125,7 +142,27 @@ alert
 
      console.log(profit);
 
+  let ageA = null;
+  console.log(ageA)
+
+  const name = "front";
+  const number= 242;
+  console.log(name);
+  console.log(number);
+
+  const mystring = "123";
+  const myNum= (mystring);
+  console.log(myNum);
+   
+  const myNum2 = 123;
+  const mystring2 = myNum2.toString();
+  console.log(mystring2)
   
 
+  const song ="fight the youth";
+  const score =9;
+  const highestscore=10;
+  const output= 'I like the song ${song}.\i gave it a score  of {(score/highestscore)*100}%.';
+  console.log(output); 
 
 
