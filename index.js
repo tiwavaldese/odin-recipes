@@ -162,7 +162,59 @@ alert
   const song ="fight the youth";
   const score =9;
   const highestscore=10;
-  const output= 'I like the song ${song}.\i gave it a score  of {(score/highestscore)*100}%.';
+  const output= `I like the song ${song}.\i gave it a score  of ${(score/highestscore) *100}%`;
   console.log(output); 
 
+  const output1=   `I like the song.
+I gave it a score of 90%.`;
+  console.log(output1);
 
+  const output2=   `I like the song.\nI gave it a score of 90%.`;
+  console.log(output2);
+
+
+const badstring= String;
+const badstring1='this is a test';
+const badstring2 = "this is a test"
+console.log(badstring);
+console.log(badstring1);
+console.log(badstring2);
+
+const sgl= 'would you eat a "fish super"?';
+const dbl= "i'm feeling bleu";
+const sgla = 'I\'ve got no right to take a place';
+console.log(sgl);
+console.log(dbl);
+console.log(sgla);
+
+const one= "hello,";
+const two= 'how are you?';
+const three= "hope fine";
+const joint= `${one}${two},${three}`;
+console.log(joint);
+
+const greetings="hello";
+const name1= "vera";
+const dbla = "how are you doing?";
+console.log(`${greetings},${name1},${dbla}`)
+
+const browertype= 'mozilla';
+console.log(browertype.length);
+console.log(browertype[0]);
+console.log(browertype[browertype.length-1]);
+
+const browserType = 'mozilla';
+
+if (browserType.startsWith('zilla')) {
+  console.log('Found zilla!');
+} else {
+  console.log('No zilla here!');
+}
+
+const browserType1 = 'mozilla';
+
+if (browserType.endsWith('zilla')) {
+  console.log('Found zilla!');
+} else {
+  console.log('No zilla here!');
+}
