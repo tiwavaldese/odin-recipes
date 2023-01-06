@@ -1,5 +1,6 @@
 h1{color: black;
-background-color: none;}
+background-color: none;
+text-align: center;}
 
 p{color:black;
 background-color: none;}
@@ -12,7 +13,8 @@ background-color: none;}
  height:auto;
 }
 img{height: auto;
-width: 1000px;}
+width: 700px;
+}
 *{
     padding: 10;
     margin: 30;
