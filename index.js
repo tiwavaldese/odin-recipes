@@ -314,3 +314,45 @@ function double(number) {
 const numbers = [5, 2, 7, 6];
 const doubled = numbers.map(double);
 console.log(doubled);
+
+
+
+const data= ['Manchester','London','Liverpool','Edinburgh','Carlisle','Totnes'];
+data.length;
+const commaseparated=data.join(',');
+console.log(data[0]);
+console.log(data[1]);
+console.log(data[2]);
+console.log(data.length);
+console.log(data.length-1);
+console.log(commaseparated);
+
+
+const cities7='manCHESTER,LONdon,LIVERpoOL,EDINburgh,CARlisle';
+console.log(cities7.toLowerCase());
+console.log(cities7.toUpperCase());
+console.log(cities7[0].toUpperCase());
+
+
+
+const dogNames = ['Rocket','Flash','Bella','Slugger'];
+const commaSeparated=dogNames.join(',');
+console.log(commaSeparated);
+
+const text= 'some text with MIXED CAse LETters,';
+
+console.log(text.toLowerCase());
+console.log(text.toUpperCase());
+
+
+
+let number1= 'Underpants:6.99'
+              'Socks:5.99'
+              'Tshirt:14.99'
+              'Trousers:31.99'
+              'Shoes:25.99';
+let array= number1.split('');
+console.log(array);
+
+
+
