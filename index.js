@@ -346,13 +346,98 @@ console.log(text.toUpperCase());
 
 
 
-let number1= 'Underpants:6.99'
-              'Socks:5.99'
-              'Tshirt:14.99'
-              'Trousers:31.99'
-              'Shoes:25.99';
-let array= number1.split('');
-console.log(array);
+const product= 'Underpants:$6.99'
+              'Socks:$5.99'
+              'Tshirt:$14.99'
+              'Trousers:$31.99'
+              'Shoes:$25.99';
+
+  const subArray= product.split(':');
+  const Name= subArray[0];
+  const price= Number(subArray[1]);
+  const itemTEXT= `${Name} - $${price}`
+  
+console.log(subArray);
+console.log(Name);
+console.log(price);
+console.log(itemTEXT);
+
+let text1="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  let length= text1.length;
+console.log(length);
 
 
+let text2="Apple,Banana,Kiwi";
+let part=text2.slice(7,13);
+console.log(part);
 
+let text3="Apple,Banana,Kiwi";
+let part1=text3.slice(-12,-6);
+console.log(part1);
+
+let text4="Apple,Banana,Kiwi";
+let part2=text4.substring(-12);
+let part3=text4.substring(7,13);
+console.log(part2);
+console.log(part3);
+
+let str="Apple,Banana,Kiwi";
+
+let part4=str.substr(7,8);
+let part5=str.substr(-4)
+console.log(part4);
+console.log(part5);
+
+let str1="please visit Microsoft and microsoft!";
+let part6=str1.replace("Microsoft","W3School");
+console.log(part6);
+
+
+let str2="please visit microsoft!";
+let part7=str2.replace(/MICROSOFT/i,"W3School");
+console.log(part7);
+
+let str3="please visit the cats";
+let part8=str3.replaceAll("cats","Dog");
+console.log(part8);
+
+let str4='Hello';
+let str5= 'World';
+let str6=str4.concat('', str5);
+console.log(str6);
+
+let str7= '     HelloWorld      ';
+let str8= str7.trimEnd();
+let str9=str7.trimStart();
+console.log(str8);
+console.log(str9);
+
+let text5= '5';
+let padded=text5.padStart(3,'0');
+console.log(padded)
+
+let num= 5;
+let text6=num.toString();
+let padded1=text6.padStart(4,'0');
+console.log(padded1);
+
+let text7= '5';
+let padded2=text7.padEnd(4,'0');
+console.log(padded2)
+
+let num1= 5;
+let text8=num.toString();
+let padded3=text8.padEnd(4,'0');
+console.log(padded3);
+
+let txt= 'HELLO WORLD';
+let char= txt.charAt(0);
+console.log(char);
+
+let txt1= 'HELLO WORLD';
+let char1= txt1.charCodeAt(0);
+console.log(char1);
+
+let txt2= 'HELLO WORLD';
+let char2= txt2[0];
+console.log(char2);
