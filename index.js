@@ -346,11 +346,11 @@ console.log(text.toUpperCase());
 
 
 
-const product= 'Underpants:$6.99'
+const product= `'Underpants:$6.99'
               'Socks:$5.99'
               'Tshirt:$14.99'
               'Trousers:$31.99'
-              'Shoes:$25.99';
+              'Shoes:$25.99'`;
 
   const subArray= product.split(':');
   const Name= subArray[0];
@@ -504,3 +504,22 @@ console.log(dat0.endsWith("World", 11))
 
 let daT= "John Doe";
 console.log(daT.endsWith("Doe"));
+
+let fName= "John";
+let lName= "Doe";
+let tet= `welcome ${fName},${lName}!`;
+console.log(tet);
+
+let P=10;
+let VAT= 0.25;
+let T= `TOTAL:${(P*(1+VAT)).toFixed(2)}`;
+console.log(T);
+
+let header= "Templates Literals";
+let tags= ["templates literals","javascript","es6"];
+let html= `<h2>${header} </h2><ul>`;
+for (const x of tags){
+  html += `<li>${x}</li>`;
+}
+html += `</ul>`;
+console.log(html);
