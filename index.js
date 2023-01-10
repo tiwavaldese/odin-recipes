@@ -441,3 +441,66 @@ console.log(char1);
 let txt2= 'HELLO WORLD';
 let char2= txt2[0];
 console.log(char2);
+
+let txt3="please locate where 'locate' occur!";
+console.log(txt3.indexOf("locate"));
+
+
+let txt4="please locate where 'locate' occur!";
+console.log(txt4.lastIndexOf("locate"));
+
+let txt5="please locate where 'locate' occur!";
+console.log(txt5.indexOf("John"));
+
+let txt6="please locate where 'locate' occur!";
+console.log(txt6.lastIndexOf("John"));
+
+let txt7="please locate where 'locate' occur!";
+console.log(txt7.indexOf("locate",15));
+
+let txt8="please locate where 'locate' occur!";
+console.log(txt8.lastIndexOf("locate",15));
+
+let txt9="please locate where 'locate' occur!";
+console.log(txt9.search(/locate/));
+
+let txt0="please locate where 'locate' occur!";
+console.log(txt0.search("locate"));
+
+
+let dat1= "The rain in SPAIN mainly in the plain";
+console.log(dat1.match(/ain/))
+
+let dat2= "The rain in SPAIN mainly in the plain";
+console.log(dat2.match(/ain/g))
+
+let dat3= "The rain in SPAIN mainly in the plain";
+console.log(dat3.match(/ain/gi))
+
+let iterator= 'cats';
+console.log(iterator.matchAll(/cats/gi));
+
+
+let dat4= "Hello World, welcome to the universe.";
+console.log(dat4.includes("World"))
+
+let dat5= "Hello World,welcome to the universe.";
+console.log(dat5.includes("World",12));
+
+let dat6= "Hello World, welcome to the universe.";
+console.log(dat6.startsWith("Hello"))
+
+let dat7= "Hello World, welcome to the universe.";
+console.log(dat7.startsWith("World"))
+
+let dat8= "Hello World, welcome to the universe.";
+console.log(dat8.startsWith("World",6))
+
+let dat9= "Hello World, welcome to the universe.";
+console.log(dat9.endsWith("World"))
+
+let dat0= "Hello World, welcome to the universe.";
+console.log(dat0.endsWith("World", 11))
+
+let daT= "John Doe";
+console.log(daT.endsWith("Doe"));
