@@ -372,7 +372,7 @@ let part=text2.slice(7,13);
 console.log(part);
 
 let text3="Apple,Banana,Kiwi";
-let part1=text3.slice(-12,-6);
+let part1=text3.slice (-12,-6);
 console.log(part1);
 
 let text4="Apple,Banana,Kiwi";
@@ -523,3 +523,63 @@ for (const x of tags){
 }
 html += `</ul>`;
 console.log(html);
+
+
+ 
+
+
+const a = "a";
+const b = "b";
+
+if (a<b){
+  console.log(`${a} is less than ${b}`)
+}
+
+else if (a>b){
+  console.log(`${a} is greater than ${b}`)
+}
+else {
+  console.log(`${a} and ${b} are equal.`);
+}
+
+const areEqualInUpperCase= (str1,str2)=>
+str1.toUpperCase()=== str2.toUpperCase();
+const areEqualInLowerCase= (str1,str2)=>
+str1.toLowerCase()=== str2.toLowerCase();
+
+console.log(areEqualInUpperCase);
+console.log(areEqualInLowerCase);
+
+console.log(areEqualInUpperCase("ß","ss",));
+console.log(areEqualInLowerCase("i", "I"));
+
+const areEqual1= (str1,str2, locale = "en-us")=>
+str1.localeCompare(str2,locale,{sensitivity: "accent"})===0;
+console.log(areEqual1);
+
+const striprim = "foo";
+const striprim1 = 'string(1)';
+const striprim2 = 'string(true)';
+const srtObj = new String(striprim);
+ 
+console.log(typeof striprim);
+console.log(typeof striprim1);
+console.log(typeof striprim2);
+console.log(typeof striObj);
+
+const s1= "2 + 2";
+const s2= new String("2 + 2");
+
+console.log(eval(s1));
+console.log(eval(s2));
+console.log(eval(s2.valueOf()));
+
+const longstring=                                                    
+"This is a very long string which need \
+to wrap across multiple lines because \
+otherwise my code is unreadable.";
+
+console.log(longstring);
+
+console.log("😄".split(""));
+console.log("👨‍👦".split(""));
