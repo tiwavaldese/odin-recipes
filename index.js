@@ -525,8 +525,6 @@ html += `</ul>`;
 console.log(html);
 
 
- 
-
 
 const a = "a";
 const b = "b";
@@ -541,6 +539,7 @@ else if (a>b){
 else {
   console.log(`${a} and ${b} are equal.`);
 }
+
 
 const areEqualInUpperCase= (str1,str2)=>
 str1.toUpperCase()=== str2.toUpperCase();
@@ -583,3 +582,206 @@ console.log(longstring);
 
 console.log("😄".split(""));
 console.log("👨‍👦".split(""));
+
+const t= "Hello world";
+console.log(t.bold());
+
+const tx= "Hello world";
+console.log(tx.italics());
+
+let st= '05'>4;
+
+console.log(st);
+
+let sr= a>z;
+
+console.log(sr);
+
+let st1= 'glow'>'glee';
+let s='apple'>'pineapple';
+console.log(st1);
+console.log(s);
+
+
+let st2= '01'==1;
+
+console.log(st2);
+
+let st3= true==1;
+let st4= false==0;
+
+console.log(st3);
+console.log(st4);
+
+let d= 0;
+let e= '0';
+console.log(Boolean(d));
+console.log(Boolean(e));
+console.log(d==e);
+
+console.log(null>0);
+console.log(null==0);
+console.log(null>=0);
+console.log(undefined==null);
+console.log(undefined===null);
+
+if (x>y);
+console.log("hello world");
+
+let hour =9;
+
+if (hour>= 6 && hour < 12){
+console.log('Good morning');
+}
+
+ else if (hour>= 12 && hour < 18){
+console.log('Good afternoon');
+}
+else{
+console.log('Good Evening')};
+
+
+let hour1 =13;
+
+if (hour1>= 6 && hour1 < 12){
+console.log('Good morning');
+}
+
+ else if (hour1>= 12 && hour1 < 18){
+console.log('Good afternoon');
+}
+else{
+console.log('Good Evening')};
+
+
+
+let hour2 =19;
+
+if (hour2>= 6 && hour2 < 12){
+console.log('Good morning');
+}
+
+ else if (hour2>= 12 && hour2 < 18){
+console.log('Good afternoon');
+}
+else{
+console.log('Good Evening')};
+
+let day;
+switch(new Date().getDay()){
+  case 0:
+    day= "Sunday";
+    break;
+    case 1:
+      day="Monday";
+      break;
+      case 2:
+        day= "Tuesday";
+        break;
+        case 3:
+          day= "Wednesday";
+          break;
+          case 4:
+            day= "Thursday";
+            break;
+            case 5:
+              day="Friday";
+              break;
+              case 6:
+                day= "Saturday";
+                break;
+}
+console.log(day);
+
+const Animal='Giraffe';
+switch(Animal){
+  case 'cow':
+    case 'Giraffe':
+      case 'Dog':
+        case 'Pig':
+          console.log('This animal will go on Noah\'s Ark.');
+        break;
+        case 'spoon':
+          console.log('A spoon is not an animal');
+          break;
+        case 'Dinosaur':
+          default:
+            console.log('This animal will not be on the Ark.');
+        }
+
+        const Animal1='spoon';
+switch(Animal1){
+  case 'cow':
+    case 'Giraffe':
+      case 'Dog':
+        case 'Pig':
+          console.log('This animal will go on Noah\'s Ark.');
+        break;
+        case 'spoon':
+          console.log('A spoon is not an animal');
+          break;
+        case 'Dinosaur':
+          default:
+            console.log('This animal will not be on the Ark.');
+        }
+
+        const Animal2='Dinosaur';
+switch(Animal2){
+  case 'cow':
+    case 'Giraffe':
+      case 'Dog':
+        case 'Pig':
+          console.log('This animal will go on Noah\'s Ark.');
+        break;
+        case 'spoon':
+          console.log('A spoon is not an animal');
+          break;
+        case 'Dinosaur':
+          default:
+            console.log('This animal will not be on the Ark.');
+        }
+
+
+   let day1;
+    switch(new Date().getDay()) {
+      case 6:
+        day1= 'Today is Saturday';
+        break;
+        case 0:
+          day1 = 'Today is sunday';
+          break;
+          default:
+            day1= 'Looking forward to the weekend';
+            console.log(day1);
+    }
+
+    
+   let day2;
+   switch(new Date().getDay()) {
+     
+         default:
+        day2= 'Looking forward to the weekend';
+       case 6:
+       day2= 'Today is Saturday';
+       break;
+       case 0:
+         day2 = 'Today is sunday';
+         break;
+
+   }console.log(day2);
+
+
+   let dat;
+   switch(new Date().getDay()){
+    case 4:
+      case 5:
+        dat ='soon it is weekend';
+        break;
+        case 0:
+          case 6:
+            dat = 'it is weekend';
+            break;
+            default:
+              dat = 'looking forward to the weekend';
+              
+   }console.log(dat);
