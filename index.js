@@ -855,8 +855,4 @@ for(let i=5; i>=1; i--){
     // some code
     console.log(i1);
   }
-  var i2= 5;
-  for(let i2= 0;i1<10; i2++){
-    // some code
-    console.log(i2);
-  }
+  
