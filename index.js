@@ -752,6 +752,7 @@ switch(Animal2){
           break;
           default:
             day1= 'Looking forward to the weekend';
+            
             console.log(day1);
     }
 
@@ -766,7 +767,7 @@ switch(Animal2){
        break;
        case 0:
          day2 = 'Today is sunday';
-         break;
+        break; 
 
    }console.log(day2);
 
@@ -785,3 +786,77 @@ switch(Animal2){
               dat = 'looking forward to the weekend';
               
    }console.log(dat);
+
+   let u = "0";
+switch (u) {
+  case '0':
+    console.log('off');
+    break;
+  case '1':
+    console.log('on');
+    break;
+  default:
+    console.log("No value found");
+}
+
+
+let fruit= 'Apple'
+switch(fruit){
+  case 'Banana':
+  console.log("Hello");
+  break;
+  case 'Apple':
+  console.log("Welcome");
+
+} 
+
+for(let i=0; i<5; i++){
+  console.log('Hello World',i)
+}
+
+for(let i=1; i<=5; i++){
+if( i % 2 !==0)
+  console.log(i)
+}
+
+for(let i=1; i<5; i++){
+  console.log('Hello World',i)
+}
+for(let i=5; i>=1; i--){
+  if( i % 2 !==0)
+    console.log(i)
+  }
+
+  
+  for(let i= 0,cars="volvo" ,len= cars.length, text =""; i<len; i++){
+    text+= cars[i] + "<br>";
+    console.log(i)
+  }
+  let i= 2;
+  let cars="volve";
+  let len= cars.length;
+  let text22="";
+  for (; i<len; i++){
+    text22 += cars[i] + "<br>";
+    console.log(i);
+  }
+
+  let I=0;
+  let car="volvo";
+  let len1= car.length;
+  let text11= "";
+  for (; I<len1;){
+    text11 +=car[I] + "<br>";
+    I++;
+    console.log(I);
+  }
+  let i1= 5;
+  for(let i1= 0;i1<10; i1++){
+    // some code
+    console.log(i1);
+  }
+  var i2= 5;
+  for(let i2= 0;i1<10; i2++){
+    // some code
+    console.log(i2);
+  }
