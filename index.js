@@ -856,3 +856,47 @@ for(let i=5; i>=1; i--){
     console.log(i1);
   }
   
+  const person={fname: 'John', lname: 'Doe', age: 25};
+  let T1="";
+  for(let x in person){
+    T1 += person[x];
+    console.log(person[x]);
+  }
+
+  const N=[45, 4, 9, 16, 25];
+  let T2="";
+  for(let x in N){
+    T2 += N[x]; 
+    console.log(N[x]);
+  }
+
+  const Num=[45, 4, 9, 16, 25];
+  let T3="";
+  Num.forEach(myFunction);
+  function myFunction(value,index,array){
+  
+    T3 += value;
+    console.log(Num);
+  } 
+
+  let Car= {
+    make: 'chevy',
+    model: 'corvette',
+    year: '2022',
+    color: 'red'
+  }
+  for(let property in Car){
+    console.log(Car[property]);
+  }
+
+  let letter= ['H','E','L','P'];
+  for(let i in letter){
+    console.log(letter[i]);
+  }
+
+  const Cars= ['BMW', 'volvo', 'Mini'];
+  let T4= "";
+  for(let x of Cars){
+    
+    console.log(Cars[x]);
+  }
