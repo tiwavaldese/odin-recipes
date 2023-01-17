@@ -869,15 +869,22 @@ for(let i=5; i>=1; i--){
     T2 += N[x]; 
     console.log(N[x]);
   }
-
+ 
   const Num=[45, 4, 9, 16, 25];
-  let T3="";
   Num.forEach(myFunction);
   function myFunction(value,index,array){
-  
+    let T3="";
     T3 += value;
-    console.log(Num);
+    console.log("your T3 is:" +T3);
   } 
+
+  let sum= 0;
+  let cart= [5,6,7,8,9];
+  function checkout(element, index, array){
+    sum +=element;
+  }
+  cart.forEach(checkout);
+  console.log("your sum is: $" +sum);
 
   let Car= {
     make: 'chevy',
@@ -898,5 +905,66 @@ for(let i=5; i>=1; i--){
   let T4= "";
   for(let x of Cars){
     
-    console.log(Cars[x]);
+    T4 += x;
+    console.log(x);
   }
+
+  const language= "Javascript";
+  let T5= "";
+  for(let x of language){
+    T5 += x;
+    console.log(x);
+  }
+
+  let nums= [];
+  nums[0]= 5;
+  nums[99]= 9;
+  for(let n of nums){
+    console.log(n);
+  }
+  for(let key in nums){
+    console.log(nums);
+    console.log(nums.length);
+    
+  }
+
+  while(i< 10){
+    console.log( "your number is" + i);
+    i++;
+    
+  }
+
+  let Age=8;
+  while(Age<10){
+    console.log("your Age is less than 10");
+    Age++;
+  }
+  do{
+    document.write("The number is" +i);
+    i++;
+  }
+  while(i<10);
+  console.log('your number is' +i);
+
+  let X=7;
+  do{
+    document.write("<h2>Tanmay</h2>");
+    X--;
+  }while(X<5);
+  console.log(X)
+
+  const carS= ['BMW','Volvo','Saab','Ford'];
+  let p=0;
+  let texT="";
+  for(;carS[p];){
+    texT += carS[p];
+    p++;
+  }console.log(p);
+
+  const caRs= ['BMW','Volvo','Saab','Ford'];
+  let m=0;
+  let teXt="";
+  while(caRs[m]){
+    teXt += caRs[m];
+    m++;
+  }console.log(m);
