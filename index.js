@@ -585,16 +585,3 @@ list:{
   console.log(cArs[3] + '<br>');
  
 }
-let resul= b||a;
-console.log(resul);
-
-console.log(true||true);
-
-console.log(false||true);
-console.log(true||false);
-console.log(false||false);
-
-let h= 9
-if(h<10||h>18){
-  console.log(h);
-}
