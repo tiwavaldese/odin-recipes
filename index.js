@@ -563,3 +563,38 @@ console.log('Good afternoon');
 }
 else{
 console.log('Good Evening')};
+
+
+for(let i=0; i<10; i++){
+  if(i === 4){break;}
+  console.log('The number is' +i,+'<br>')
+}
+
+
+for(let i=0; i<10; i++){
+  if(i === 4){continue;}
+  console.log('The number is' +i,+'<br>')
+}
+
+const cArs= ['BMW','Volvo','Saab','Ford'];
+list:{
+ console.log(cArs[0] + '<br>');
+  console.log(cArs[1] + '<br>');
+  break list;
+  console.log(cArs[2] + '<br>');
+  console.log(cArs[3] + '<br>');
+ 
+}
+let resul= b||a;
+console.log(resul);
+
+console.log(true||true);
+
+console.log(false||true);
+console.log(true||false);
+console.log(false||false);
+
+let h= 9
+if(h<10||h>18){
+  console.log(h);
+}
