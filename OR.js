@@ -60,3 +60,20 @@ console.log(null || 2 && 3 || 4);
 
 if (-1 || 0)console.log('first');
 if (null ||-1 && 1)console.log('third');
+
+
+let userN= prompt("who's there?",'');
+if(userN === 'Admin'){ 
+let pass = prompt('password','');
+if(pass === 'TheMaster'){
+  console.log('welcome!');
+}else if(pass ==='' || pass === 'null'){
+  console.log('canceled');
+}else{
+  console.log('wrong password')
+} 
+}else if(userN === '' || userN === 'null'){
+  console.log('canceled');
+}else{
+  console.log("i don't know you");
+}
