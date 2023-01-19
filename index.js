@@ -587,3 +587,23 @@ list:{
 }
 
 
+let shoppingDone= false;
+let childAllowance;
+if(shoppingDone === true){
+  childAllowance = 10;
+  console.log('true');
+}else{
+  
+  console.log('false');
+}
+
+function checkWinner(win){
+  win? console.log('you win!') : console.log('you lose!');
+}checkWinner(false);
+
+
+function checkAge(age){
+  return age >=21 ? "you get beer!" : "you get Apple juice!";
+}
+console.log(checkWinner(21));
+
