@@ -6,7 +6,7 @@ Num.forEach(myFunction);
 function myFunction(value,index,array){
   let T3="";
   T3 += value;
-  console.log("your T3 is:" +T3);
+  console.log( +T3);
 } 
 
 let sum= 0;
