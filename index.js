@@ -607,3 +607,23 @@ function checkAge(age){
 }
 console.log(checkWinner(21));
 
+let login= ("what's the official name of Javascript?",'');
+if(login=== 'ECMAScript'){
+  
+  console.log('right')
+}
+else{ 
+  console.log("you don't know 'ECMAScript'");
+}
+
+let userName = ("who's there?",'');
+if(userName === 'Admin'){
+  let pass= ('password','');
+  if(pass === 'TheMaster'){
+    console.log('welcome');
+  }else if(pass === ''|| pass === null){
+    console.log('wrong password')
+  }
+}else if(userName === ''|| userName === null){
+  console.log("i don't know you");
+}
