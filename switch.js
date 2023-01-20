@@ -142,3 +142,49 @@ switch(fruit){
   console.log("Welcome");
 
 } 
+
+let grade=60;
+switch(true){
+  case grade >=90:
+    console.log('A');
+    break;
+    case grade>=80:
+      console.log('B');
+      break;
+      case grade >=70:
+        console.log('C');
+        break;
+        case grade >=60:
+          console.log('D');
+          break;
+          case grade>=50:
+            console.log('E');
+            default:
+              console.log('F')
+}
+
+const month= new Date().getMonth();
+switch(month){
+  case 0:
+    case 1:
+      case 2:
+        console.log('winter');
+        break;
+        case 3:
+          case 4:
+            case 5:
+              console.log('spring');
+              break;
+              case 6:
+                case 7:
+                  case 8:
+                    console.log('summer');
+                    break;
+                    case 9:
+                      case 10:
+                        case 11:
+                          console.log('Autumn')
+                          break;
+                          default:
+                            console.log('something when wrong');
+}
