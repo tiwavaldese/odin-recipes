@@ -15,4 +15,8 @@ do{
   }while(X<5);
   console.log(X)
 
- 
+ let q=0;
+ do{
+  q++;
+  console.log(q);
+ }while(false);
