@@ -21,3 +21,10 @@ while(i< 10){
     teXt += caRs[m];
     m++;
   }console.log(m);
+
+  let poplimit=10;
+  let fish=0;
+  while(fish<poplimit){
+    fish++;
+    console.log("There's room for" + (poplimit - fish) +'more fish')
+  }
