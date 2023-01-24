@@ -109,8 +109,136 @@ const employees={
    sales:'Jim',
    accountant:'Oscar'
 };
+
+const America= {
+   name:'The united states of America',
+   yearFounded: 1776,
+   describe()
+   
+   {
+      console.log(`${this.name} was founded in ${this.yearFounded}.`)
+   }
+}  
+America.describe()
+
+
+const america= {
+   name:'The united states of America',
+   yearFounded: 1776,
+   details:{
+      symbol: 'eagle',
+      currency:'USD',
+      printDetails()
+      {
+         console.log(`This symbol is the ${this.symbol} and the currency is ${this.currency}.`)
+      },
+   },
+}  
+america.details.printDetails()
+
+   
+function Country(name,yearFounded){
+   this.name= name;
+   this.yearFounded=yearFounded;
+
+   this.describe= function(){
+      console.log(`${this.name} was founded in ${this.yearFounded}.`)
+   }
+}
+const america1= new Country('The united states of America', 1776)
+america1.describe()
+
+
+class Country1{
+   constructor(name,yearFounded){
+      this.name = name;
+      this.yearFounded= yearFounded;
+   }
+   describe(){
+      console.log(`${this.name} was founded in ${this.yearFounded}.`)
+   }
+}
+const america2= new Country1('The united states of America', 1776)
+
+america2.describe()
+
+
+const button = document.createElement('button')
+button.textcontent = 'click me';
+document.body.append(button);
+
+class Display {
+   constructor() {
+      this.buttonText = 'New text'
+   
+
+button.addEventListener('click',event => 
+{
+   event.target.textcontent = this.buttonText
+   
+})
+}
+}
+new Display();
+
+
+const book ={
+   title: 'Brave New World',
+   author: 'Aldou Huxley',
+}
+function summary()
+{
+   console.log(`${this.title} was written by ${this.author}`);
+}
+summary.call(book);
+//or:
+summary.apply(book);
+
+
+
+const book1 ={
+   title: 'Brave New World',
+   author: 'Aldou Huxley',
+}
+function longersummary(genre,year)
+{
+   console.log
+   (`${this.title} was written by ${this.author}. It is a  ${genre} novel written by ${year}`);
+}
+longersummary.call(book1, 'dystopian', 1932);
+//or:
+longersummary.apply(book1,['dystopian',1932]);
+const BraveNewWorldsummary = summary.bind(book)
+BraveNewWorldsummary()
+const book2 ={
+   title: '1984',
+   author: 'George Orwell'
+}
+BraveNewWorldsummary(book2)
+BraveNewWorldsummary()
+
+
+const whoAmi = {
+name: 'Leslie Knope',
+regularFunction:  function(){
+   console.log(this.name)
+},
+arrowFunction: ()=> {
+   console.log(this.name)
+},
+}
+whoAmi.regularFunction()
+whoAmi.arrowFunction()
+
+
+
 const keys=object.keys(employees);
-console.log(employees)
+console.log('keys',keys);
+const values=object.values(employees);
+console.log('values',values);
+const entries=object.entries(employees);
+console.log('entries',entries);
+
 
 
 const job={
@@ -123,7 +251,7 @@ const job={
 
    }
 }
-let Barista= object.create(job);
+let Barista= object.Barista(job);
 Barista.position= 'Barista';
 Barista.showDetails();
 console.log(Barista)
