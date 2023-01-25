@@ -231,6 +231,263 @@ whoAmi.regularFunction()
 whoAmi.arrowFunction()
 
 
+function*generatorFunction(){
+   return 'hello, Generator!';
+   
+}const generator = generatorFunction();
+console.log(generator)
+console.log(generator.next());
+console.log(generator);
+
+
+
+function*generatorFunction(){
+   yield 'Neo'
+   yield 'Morpheus'
+   yield 'Trinity'
+
+return 'oracle'
+   
+}const generator1 = generatorFunction();
+console.log(generator1);
+
+
+console.log(generator1.next());
+console.log(generator1.next());
+console.log(generator1.next());
+console.log(generator1.next());
+
+const values1 = [...generator]
+console.log(values1)
+
+
+console.log(generator1);
+
+
+for(const value of generator){
+   console.log(value)
+}
+
+
+function*generatorFunction(){
+   yield 'Mon'
+   yield 'Morpheus'
+   yield 'square'
+
+}const generator2 = generatorFunction();
+
+console.log(generator1.next());
+console.log(generator1.return('There is no spoon!'));
+console.log(generator1.next());
+
+
+function*generatorFunction(){
+   try{yield 'Mon'
+   yield 'Morpheus'
+ } catch (error){
+   console.log(error)
+ }
+
+}const generator3 = generatorFunction();
+
+console.log(generator3.next());
+console.log(generator3.throw(new Error('Agent smith!')));
+
+
+
+function*delegate(){
+   yield 4
+   yield 5
+   yield 6
+
+}
+
+function*begin(){
+   yield 1
+   yield 2
+   yield 3
+yield*delegate()
+}
+const generator4 = begin();
+
+for(const valuE of generator4){
+   console.log(valuE);
+}
+
+function*increment() {
+   let i = 0
+
+   while (true){
+      yield i++
+   }
+}
+const counter= increment()
+console.log(counter.next())
+console.log(counter.next())
+console.log(counter.next())
+
+function* fibonacci() {
+   let prev= 0
+   let next= 1
+
+   yield prev
+   yield next
+
+   while(true){
+   const newVal = next + prev
+
+   yield newVal
+
+   prev = next
+   next = newVal
+
+}
+}
+const fib = fibonacci()
+
+for(let i = 0; i < 10; i++){
+   console.log(fib.next().value)
+}
+
+
+
+function cube (x)
+{
+   console.log(x * x * x);
+   
+}
+cube(10)
+
+const cube1= x => {
+   console.log(x*x*x);
+}
+cube1(10);
+
+
+const cube2= x => {
+   console.log(x*x*x);
+}
+cube2();
+
+
+function cube(x) {
+   if(typeof x === 'undefined') {
+      x = 5
+   }
+   console.log(x * x * x)
+}
+cube()
+
+
+function cube(x = 5) {
+  
+   console.log(x * x * x)
+}
+cube()
+
+
+function cube(x = 5) {
+   
+   console.log(x * x * x)
+}
+cube(undefined)
+
+
+const defaultNumber = (number= 42) => console.log(number)
+const defaultString = (string = 'shark') => console.log(string)
+const defaultBoolean = (number = true) => console.log(boolean)
+const defaultObject = (object = {id: 7}) => console.log(object)
+const defaultArray = (array = [1, 2, 3]) => console.log(array)
+const defaultNull = (nullValue = null) => console.log(nullValue)
+
+
+function sums(a= 1, b= 2){
+   console.log(a + b);
+}
+sums()
+
+function createUser( name, rank, userObj = {name, rank}) {
+   console.log(userObj);
+}
+const uSer = createUser('Jean Luc', 'Captain');
+
+
+function defaultFirst(a= 1, b){
+   console.log(a + b);
+}
+defaultFirst(undefined,4);
+
+
+function defaultLast(a, b = 3){
+   console.log(a + b);
+}
+defaultLast(4);
+
+function createNewElement(tag, text, classNames =[]){
+   const el = document.createElement(tag)
+   el.textcontent = text
+
+   classNames.forEach(className => {
+      el.classList.add(className)
+   })
+   console.log(el)
+}
+const greets = createNewElement('p', 'Hello!', ['greeting', 'active'])
+
+
+function createNewElement(tag, text, classNames =[]){
+   const el1 = document.createElement(tag)
+   el1.textcontent = text
+
+   classNames.forEach(className => {
+      el1.classList.add(className)
+   })
+   console.log(el1)
+}
+const greets1 = createNewElement('p', 'Hello!' )
+
+
+function getRandomNumber()
+{
+   console.log(Math.floor(Math.random() * 10))
+}
+function cube(x = getRandomNumber()){
+   console.log(x * x * x)
+}
+cube();
+cube()
+
+
+function doesXEqualY(x = getRandomNumber(), y = Math.cbrt(cube(x))) {
+   console.log(x === y)
+}
+doesXEqualY();
+
+
+function outer(
+   parameter = function inner() {
+      console.log(100)
+   }
+){
+   console.log(parameter())
+}
+outer()
+
+
+
+
+
+
+const getUsers= async function(){
+   const response= await fetch('http://jsonplaceholder.typicode.com/users')
+   const json= await response.json()
+   
+   return json
+   }
+   getUsers().then(response => console.log(response))
+   
+
+
 
 const keys=object.keys(employees);
 console.log('keys',keys);
