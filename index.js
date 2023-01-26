@@ -627,3 +627,61 @@ if(userName === 'Admin'){
 }else if(userName === ''|| userName === null){
   console.log("i don't know you");
 }
+
+const note= {
+  id: 1,
+  title: 'My first note',
+  date: '01/01/1977'
+}
+const id = note.id
+const title = note.title
+const date = note.date
+
+const{ id1, title1, date1}= note
+
+console.log(id);
+console.log(title);
+console.log(date);
+
+
+const note1= {
+  id: 1,
+  title: 'My first note',
+  date: '01/01/1977',
+  author:{
+        firstName1: 'Shela',
+    lastName2: 'Ryan',
+  }
+}
+
+const {id2, title2, date2, author:  {firstName1,lastName2}
+} = note1
+
+console.log(`${firstName1} ${lastName2}`);
+
+
+const {author, author:  {firstName2,lastName3}
+} = note1
+console.log(author);
+
+const {Length}= 'A string';
+console.log(Length)
+
+const note3= {
+  id: 1,
+  title: 'My first note',
+  date: '01/01/1977',
+  author:{
+        firstNamE: 'Shela',
+    lastName2: 'Ryan',
+  },
+  tag: ['personal', 'writing', 'investigations'],
+}
+const{
+  titlE,
+  datE = new Date(),
+  author:{ firstNamE},
+  tag: [personaltTag,writingTag],
+}= note3
+
+console.log(datE)
