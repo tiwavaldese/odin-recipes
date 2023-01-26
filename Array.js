@@ -101,3 +101,98 @@ console.log(text.toLowerCase());
 console.log(text.toUpperCase());
 
 
+const dAte= ['2002','11','01']
+const Year=dAte[0]
+const Month= dAte[1]
+const Day= dAte[2]
+
+const[yeaR,montH, daY] = dAte
+
+console.log(Year);
+console.log(Month);
+console.log(Day);
+
+const[yeaR1, , daY1] = dAte
+console.log(Year);
+console.log(Day);
+
+
+const nestedArray= [1, 2, [3, 4],5]
+const [One, Two, [Three, Four], Five] =nestedArray
+
+console.log(One,Two,Three,Four,Five)
+
+
+
+const note2= {
+  id: 1,
+  title: 'My first note',
+  date: '01/01/1977'
+}
+Object.entries(note2).forEach(([key,value]) => {
+  console.log(`${key}: ${value}`)
+})
+
+for(let [key,value] of Object.entries(note)) {
+  console.log(`${key}: ${value}`)
+}
+
+
+const note4= {
+  id: 1,
+  title: 'My first note',
+  date: '01/01/1977',
+  author:{
+        firstNamE: 'Shela',
+    lastName2: 'Ryan',
+  },
+  tag: ['personal', 'writing', 'investigations'],
+}
+const{
+  titlES,
+  datES = new Date(),
+  author:{ firstNamES},
+  tag: [personaltTags,writingTags],
+}= note4
+
+console.log(datES)
+
+
+
+const tools= ['hammer', 'screwdriver']
+const otherTools= ['wrench', 'saw']
+
+const allTools = tools.concat(otherTools)
+
+const allTool = [...tools, ...otherTools]
+console.log(allTools)
+
+const persons= [
+  {id: 1, name: 'Beni'},
+  {id: 2, name: 'Leslie'}
+]
+const newPersons= { id: 3, name: 'Ray'}
+
+persons.push(newPersons)
+
+const updatePersons= [...persons, newPersons]
+
+console.log(persons)
+console.log(updatePersons)
+
+
+const originalArray = ['one', 'two', 'three']
+const secondaryArray= originalArray
+
+secondaryArray.pop()
+
+console.log(originalArray)
+
+
+
+const originalArray1 = ['one', 'two', 'three']
+const secondaryArray1= [...originalArray1]
+
+secondaryArray.pop()
+
+console.log(originalArray1)
