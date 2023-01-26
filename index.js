@@ -685,3 +685,90 @@ const{
 }= note3
 
 console.log(datE)
+
+const originalObject= { enabled: true, darkMode: false}
+const secondObject= { ...originalObject}
+
+console.log(secondObject)
+
+const persons1= {
+  id:3,
+  name:'Ray'
+}
+const updatedPersons1= {...persons1,isLoggedIn: true}
+
+console.log(updatedPersons1)
+
+
+
+const persons2  ={
+  id: 4,
+  name: 'Rem',
+  organization:{
+    name: 'parks & recreation',
+    city: 'Pawnee',
+  },
+
+}
+const updatedPersons2 = {...persons2, organization: {position: 'Director'}}
+
+console.log(updatedPersons2)
+
+persons2.organization.position = 'Director'
+const updatedPersons3 = {...persons2, organization:
+   {...persons2.organization, position: 'Director'},
+  }
+
+console.log(updatedPersons3)
+
+
+function multiply1(a,b,c) {
+  console.log(a*b*c);
+
+}
+multiply1(1,2,3);
+
+
+
+
+function multiply1(a,b,c) {
+  console.log(a*b*c);
+ 
+}
+const NumB = [1,4,3]
+ multiply1(...NumB);
+
+
+
+ function multiply2(a,b,c) {
+  console.log(a*b*c);
+
+}
+ multiply1.apply(null,[1,5,3]);
+
+
+function restTest(...args){
+  console.log(args);
+}
+restTest(1,2,3,4,5,6,7);
+
+
+function restTest1(one,two,...args){
+  console.log(one);
+  console.log(two);
+  console.log(args);
+}
+restTest1(1,2,3,4,5,6,7)
+
+
+
+function testArguments(){
+  console.log(arguments)
+}
+testArguments('How', 'many', 'arguments')
+
+
+const {isloggedIn, ...rest1} = { id: 1, name: 'Ben', isloggedIn: true}
+
+console.log(isloggedIn)
+console.log(rest1)
