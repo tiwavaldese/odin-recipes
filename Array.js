@@ -196,3 +196,23 @@ const secondaryArray1= [...originalArray1]
 secondaryArray.pop()
 
 console.log(originalArray1)
+
+const sEt= new Set()
+
+sEt.add('octopus')
+sEt.add('starfish')
+sEt.add('whale')
+const seaCreatures =[...sEt]
+
+console.log(seaCreatures);
+
+const STRING = 'hello'
+const stringArray = [...STRING]
+
+console.log(stringArray)
+
+
+const [firstTool, ...rest] = ['hammer','screwdriver','wrench']
+
+console.log(firstTool);
+console.log(rest);
