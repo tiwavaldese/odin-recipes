@@ -772,3 +772,13 @@ const {isloggedIn, ...rest1} = { id: 1, name: 'Ben', isloggedIn: true}
 
 console.log(isloggedIn)
 console.log(rest1)
+
+
+
+const birthYear = 1980;
+const thisYear = 2000;
+const FirstnamE = 'Joe';
+const LastnamE = 'Joeson';
+
+const Greeto = `'Hello! my name is' ${FirstnamE} ${LastnamE} 'and i am' ${thisYear - birthYear} 'years old.'`
+console.log(Greeto)
