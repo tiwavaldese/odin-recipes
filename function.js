@@ -474,6 +474,27 @@ function outer(
 outer()
 
 
+Module.exports= function troubleshooting() {
+   let Aa = 1;
+   let Bb = 1;
+
+   let resulT;
+   resulT = "Aa" + "Bb";
+   console.log(resulT);
+}
+module.exports= troubleshooting;
+
+
+let nUmber= prompt('enter a number')
+function nUmberChecker(){
+   if (nUmber === 10){
+      console.log(true)
+   }
+   else{
+      console.log(false)
+   }
+}
+
 
 
 
