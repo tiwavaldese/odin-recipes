@@ -21,6 +21,7 @@ justify-content: center;
 }
 ul{ color: black;
 background: none;
+margin-bottom: 0.5em;
 
 }
 ol{ color: black;
@@ -40,15 +41,12 @@ width: 700px;
 div{
     display: block;
     color: black;
-    background-color: aqua;
-   font-size: 25px;
-   height: 200px;
-   width: 200px;
-    outline: 2px black ;
-    
-  
-   
-
+    background-color: purple;
+    font-size: 25px;
+    height: 200px;
+    width: 200px;
+    outline: 2px black;
+    color: w;
 }
 .container{
     border: 5px solid effects;
@@ -77,7 +75,7 @@ div{
    }
 
 .toggle .onoff{
-    color: black;
+    color: orange;
 font-size: 2em;
 text-align: center;
 display: block
@@ -93,7 +91,7 @@ display: block
     position: relative;
     display: block;
     cursor: pointer;
-    background-color: black;
+    background-color: orange;
     transition: 0.4s;
     width: 150px;
     height: 100px;
@@ -104,7 +102,7 @@ display: block
     position: absolute;
     height: 70px;
     width: 70px;
-    background-color: white;
+    background-color: black;
    transition: 0.4s;
     top: 10px;
     left: 10px;
