@@ -1,16 +1,12 @@
 h1{
     color: black;
     background-color: none;
-    font-size: 3em;
+    font-size: 2em;
     padding-bottom: 15px;
     text-align: center;
     }
 
-p{color:black;
-background-color: none;
-padding-bottom: 0.05px;
-justify-content: center;
-}
+p{color:black;background-color: none;padding-bottom: 0.05px;/* justify-content: center; */}
 
 .p{font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -76,7 +72,7 @@ div{
 
 .toggle .onoff{
     color: orange;
-font-size: 2em;
+font-size: 1em;
 text-align: center;
 display: block
 
@@ -93,18 +89,19 @@ display: block
     cursor: pointer;
     background-color: orange;
     transition: 0.4s;
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 70px;
 }
 
 .slider:before{
     content: '';
     position: absolute;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     background-color: black;
    transition: 0.4s;
-    top: 10px;
+    top: 7px;
     left: 10px;
+   bottom: 5px;
 }
 
