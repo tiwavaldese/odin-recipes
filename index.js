@@ -1,5 +1,9 @@
 alert
     //your javascript goes here!
+
+
+    console.log(document.head); 
+    console.dir(document.head);
     console.log("Hello ,world")
 
     let username='Mary';
@@ -782,3 +786,13 @@ const LastnamE = 'Joeson';
 
 const Greeto = `'Hello! my name is' ${FirstnamE} ${LastnamE} 'and i am' ${thisYear - birthYear} 'years old.'`
 console.log(Greeto)
+
+
+let temp=[{name: 'Bramus', twitter: '@bramus'},
+{name: 'Jecelyn', twitter: '@jecfish'},
+{name: 'Adam', twitter: '@argyleink'},
+{name: 'Jhey', twitter: '@jh3yy'},
+{name: 'Una', twitter: '@una'}
+]
+console.log(temp[0],temp);
+console.table(temp)
