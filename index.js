@@ -796,3 +796,7 @@ let temp=[{name: 'Bramus', twitter: '@bramus'},
 ]
 console.log(temp[0],temp);
 console.table(temp)
+
+
+
+
