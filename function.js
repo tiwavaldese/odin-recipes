@@ -495,6 +495,163 @@ outer()
     }
  }
  
+ const myText= 'i am a string';
+ const NewString= myText.replace('string', 'sausage');
+ console.log(NewString);
+ 
+ 
+ 
+ const myArray= ['I love chocolate frogs'];
+ const madeAString= myArray.join('');
+ console.log(madeAString);
+
+const MyNum= Math.random();
+console.log(MyNum);
+
+
+function hello(name='Chris'){
+   console.log(`Hello ${name}!`)
+}
+hello();
+
+
+function myfunction(){
+   console.log('hello');
+}
+myfunction()
+
+
+
+const sayHi= function (){
+   console.log('Hello world');
+}
+sayHi();
+
+
+
+function logkey(event='keydown')
+ { 
+   console.log(`you pressed "${event}".`);
+}
+logkey()
+
+
+
+const log = event =>'keydown'
+{
+   console.log(`you pressed "${event}!".`);
+}
+
+
+
+
+const originals= [5,10,15];
+const Doubled= originals.map((item)=> item*2);
+console.log(Doubled);
+
+
+const xx = 1;
+
+function aa() {
+   const yy = 2;
+   console.log(yy);
+}
+
+function bb(){
+   const zz= 3;
+   console.log(zz);
+}
+
+function outpuT(value){
+   const para= document.createElement('p');
+   document.body.appendChild(para);
+   para.textContent = `value: ${value}`;
+
+}
+console.log(xx);
+aa();
+bb()
+
+
+const xx1 = 1;
+
+function aa1() {
+   const yy1 = 2;
+   console.log(xx1);
+}
+
+function bb1(){
+   const zz1= 3;
+   console.log(xx1);
+}
+
+function outpuT1(value){
+   const para= document.createElement('p');
+   document.body.appendChild(para);
+   para.textContent = `value: ${value}`;
+
+}
+console.log(xx1);
+aa1();
+bb1()
+
+
+console.log('This is a message');
+
+
+
+function displayMessage(msgText,msgType){
+
+   const body = document.body;
+
+   const panel = document.createElement('div');
+   panel.setAttribute('class','msgBox');
+   body.appendChild(panel);
+
+   const msg = document.createElement('p');
+   msg.textContent = msgText;
+   panel.appendChild(msg);
+
+   const closeBtn = document.createElement('button');
+   closeBtn.textContent = 'x';
+   panel.appendChild(closeBtn);
+
+   const btn = document.querySelector('button');
+   btn.addEventListener('click', ()=> displayMessage('Woo,this is a different message'!))
+
+
+   closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));  
+   console.log(panel)
+   console.log(msg)
+   console.log(closeBtn)
+   console.log(btn)
+   
+
+}
+displayMessage();
+
+
+
+
+const canvas= document.querySelector('canvas');
+const ctx = '2d';
+const width= 100;
+const height = 75;
+function draw(){
+   ctx.clearRect(0,0,width,height);
+   for(let id= 0; id <100; id++) {
+      ctx.beginPath();
+      ctx.fillStyle= 'rgba(255,0,0,0.5)';
+      ctx.arc(random(width),random(height),random(50),0,2*Math.PI);
+      ctx.fill();
+
+   }
+   console.log(ctx.fill());
+ } draw()
+
+
+
+
 
 
 
