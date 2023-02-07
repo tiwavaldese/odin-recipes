@@ -600,7 +600,7 @@ console.log('This is a message');
 
 
 
-function displayMessage(msgText,msgType){
+function displayMessage(){
 
    const body = document.body;
 
@@ -609,7 +609,7 @@ function displayMessage(msgText,msgType){
    body.appendChild(panel);
 
    const msg = document.createElement('p');
-   msg.textContent = msgText;
+   msg.textContent = 'This is a message box';
    panel.appendChild(msg);
 
    const closeBtn = document.createElement('button');
@@ -617,37 +617,42 @@ function displayMessage(msgText,msgType){
    panel.appendChild(closeBtn);
 
    const btn = document.querySelector('button');
-   btn.addEventListener('click', ()=> displayMessage('Woo,this is a different message'!))
-
-
+   
    closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));  
    console.log(panel)
    console.log(msg)
    console.log(closeBtn)
-   console.log(btn)
+
    
 
 }
 displayMessage();
 
 
+window.onload = canvas;
+function canvas(){
+   let mycanvas = document.getElementById("mycanvas");
+   if(mycanvas && mycanvas.getcontext("2d"))
+   { 
+      let context  = mycanvas.getcontext("2d");
+      context.lineWidth = 6;
+      context.beginPath();
 
+      let degree = 270;
+      let radian = (Math.PI/180) * degree;
 
-const canvas= document.querySelector('canvas');
-const ctx = '2d';
-const width= 100;
-const height = 75;
-function draw(){
-   ctx.clearRect(0,0,width,height);
-   for(let id= 0; id <100; id++) {
-      ctx.beginPath();
-      ctx.fillStyle= 'rgba(255,0,0,0.5)';
-      ctx.arc(random(width),random(height),random(50),0,2*Math.PI);
-      ctx.fill();
+      context.arc(100, 100, 50, 0, radian, false);
+      context.strokeStyle = 'red';
+      context.fillStyle = 'blue';
+      context.stroke();
+      context.fill();
+      context.closePath();
 
+     
    }
-   console.log(ctx.fill());
- } draw()
+   
+}canvas();
+
 
 
 
